@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/lobster-font.css">
+    <link rel="stylesheet" href="fonts/lato-font.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SnowTeam</title>
+</head>
+
+<body id="home">
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" width="40" height="30" alt="">
+                <p class="d-inline align-middle logo-text">Snow-Team</p>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#snowboarding" class="nav-link">Snowboarding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--SECTION-INTRO-->
+    <section id="section-intro" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5 pt-5">
+                    <h1 class="text-intro text-center text-uppercase text-dark">run over everything</h1>
+                    <div class="d-flex justify-content-center">
+                        <a href="#team" class="btn btn-dark btn-lg text-white my-4">
+                    Our Team
+                  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION-VIDEO -->
+    <section id="section-video">
+        <div class="dark-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="container p-2">
+                            <a href="#" class="video" data-video="./videos/Snowboarding.mp4" data-toggle="modal" data-target="#video-modal">
+                                <i class="fa fa-2x fa-play pt-3"></i>
+                            </a>
+                            <h2 class="py-2">See Our Video</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- VIDEO MODAL -->
+    <div id="video-modal" class="modal fade" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <iframe src="" height="350" width="100%" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

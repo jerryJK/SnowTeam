@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: $background-color;
+  font-family: $main-font-family;
+}
+
+.btn.active,
+.btn:active,
+.btn:focus,
+ a.active,
+ a:active,
+ a:focus,
+ button.active,
+ button:active,
+ button:focus {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none !important;
+}

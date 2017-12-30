@@ -1,0 +1,13 @@
+.navbar {
+    background: $navbar-color;
+    opacity: 0.8;
+
+    .navbar-toggler {
+        outline: none;
+        border: none;
+    }
+
+    .logo-text {
+        font-family: $logo-font-family;
+    }
+}
