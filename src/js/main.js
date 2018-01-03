@@ -1,3 +1,12 @@
+//loading overlay
+$(window).on('load', function() {
+    $('#overlay').fadeOut(200);
+    setTimeout(function() {
+        scrollTo(0, 0);
+    }, 0);
+});
+
+
 $(function() {
   // Auto play modal video
   $(".video").click(function () {

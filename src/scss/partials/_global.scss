@@ -10,6 +10,18 @@ body {
   font-family: $main-font-family;
 }
 
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+
+
 .btn.active,
 .btn:active,
 .btn:focus,
