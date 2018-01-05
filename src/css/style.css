@@ -143,3 +143,82 @@ button:focus {
     padding: 0; }
   .container.gallery-container {
     border-radius: 0; } }
+
+#section-slider {
+  position: relative;
+  min-height: 124px;
+  background: url("../images/fixed-background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: #fff; }
+  #section-slider a {
+    color: #fff; }
+
+.carousel-item {
+  height: 124px; }
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5% !important; }
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 15px !important;
+  height: 15px !important; }
+
+.slider-text {
+  font-size: 1rem; }
+  @media (min-width: 480px) {
+    .slider-text {
+      font-size: 1.25rem; } }
+
+#section-features h1 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #35373a; }
+
+#section-features a {
+  display: block;
+  overflow: hidden;
+  position: relative; }
+
+#section-features a > img {
+  transition: transform 0.15s ease 0s;
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%; }
+
+#section-features a:hover > img {
+  transform: scale3d(1.05, 1.05, 1.05); }
+
+#section-features .card-poster > i {
+  opacity: 0; }
+
+#section-features a:hover .card-poster > i {
+  opacity: 1; }
+
+#section-features a .card-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: background-color 0.15s ease 0s; }
+
+#section-features a .card-poster > i {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  color: white;
+  transition: opacity 0.3s ease 0s; }
+
+#section-features a:hover .card-poster {
+  background-color: rgba(0, 0, 0, 0.5); }

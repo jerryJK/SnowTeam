@@ -1,6 +1,6 @@
 //loading overlay
 $(window).on('load', function() {
-    $('#overlay').fadeOut(700);
+    $('#overlay').fadeOut(500);
     setTimeout(function() {
         scrollTo(0, 0);
     }, 0);
@@ -25,5 +25,7 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event){
   $(this).ekkoLightbox();
 });
 
-
-baguetteBox.run('.main-gallery');
+//BaugetteBox gallery
+baguetteBox.run('.main-gallery', {
+  animation: 'fadeIn'
+});

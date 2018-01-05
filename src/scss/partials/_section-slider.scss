@@ -1,0 +1,36 @@
+#section-slider {
+    position: relative;
+    min-height: 124px;
+    background: url('../images/fixed-background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+
+    a {
+        color: #fff;
+    }
+}
+
+.carousel-item {
+    height: 124px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 5% !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.slider-text {
+    font-size: 1rem;
+    @media (min-width: 480px) {
+        font-size: 1.25rem;
+    }
+}
