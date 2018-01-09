@@ -1,8 +1,7 @@
-//run BaugetteBox gallery
+//initialize BaugetteBox gallery
 baguetteBox.run('.main-gallery', {
     animation: 'fadeIn'
 });
-
 
 $(function() {
     // Auto play modal video
@@ -15,6 +14,10 @@ $(function() {
             $(theModal + ' iframe').attr('src', videoSRC);
         });
     });
+
+
+    //animations
+
 
 
     //contact form validation

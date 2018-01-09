@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="fonts/lato-font.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>SnowTeam</title>
 </head>
@@ -58,12 +59,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mt-5 pt-5">
-                    <h1 class="text-intro text-center text-uppercase text-dark">run over everything</h1>
-                    <div class="d-flex justify-content-center">
+                    <h1 class="text-intro text-center text-uppercase text-dark animated fadeInUp">run over everything</h1>
+                    <div class="d-flex justify-content-center animated fadeInUp">
                         <a href="#section-team" class="btn btn-dark btn-lg text-white my-4">
                     Our Team
                   </a>
-                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -103,9 +104,9 @@
     <!-- SECTION-TEAM -->
     <section id="section-team" class="py-4">
         <div class="container">
-          <h1 class="text-center mb-4 py-3">Meet Our Team</h1>
+          <h1 class="text-center mb-4 py-3 wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="100ms">Meet Our Team</h1>
             <div class="row">
-                <div class="card col-md-4 p-2">
+                <div class="card col-md-4 p-2 wow fadeInUpBig" data-wow-duration="1000ms" data-wow-delay="100ms">
                     <img src="./images/team1.jpg" width="100%" alt="" class="card-img-top img-fluid">
                     <div class="card-body">
                         <h4 class="card-title">Steve Loren</h4>
@@ -115,7 +116,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card col-md-4 p-2">
+                <div class="card col-md-4 p-2 wow fadeInUpBig" data-wow-duration="1000ms" data-wow-delay="200ms">
                     <img src="./images/team2.jpg" alt="" class="card-img-top img-fluid">
                     <div class="card-body">
                         <h4 class="card-title">Sebastian Prolk</h4>
@@ -125,7 +126,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card col-md-4 p-2">
+                <div class="card col-md-4 p-2 wow fadeInUpBig" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <img src="./images/team3.jpg" alt="" class="card-img-top img-fluid">
                     <div class="card-body">
                         <h4 class="card-title">Jessica Donel</h4>
@@ -155,9 +156,9 @@
     <!-- SECTION-GALLERY-->
     <section id="section-gallery">
       <div id="gallery" class="container gallery-container mt-3">
-          <h1 class="pt-4">SnowTeam Gallery</h1>
-          <p class="page-description text-center mb-4">See our best photos</p>
-          <div class="main-gallery my-3">
+          <h1 class="pt-4 wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="100ms">SnowTeam Gallery</h1>
+          <p class="page-description text-center mb-4 wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="100ms">See our best photos</p>
+          <div class="main-gallery my-3 wow fadeInUpBig" data-wow-duration="1000ms" data-wow-delay="250ms">
               <div class="row">
                   <div class="col-sm-6 col-md-4">
                       <a class="lightbox" href="./images/g1.jpg">
@@ -249,10 +250,10 @@
     <!--SECTION-FEATURES-->
     <section id="section-features" class="py-4">
       <div class="container">
-        <h1 class="pt-4 text-center mb-5">Features</h1>
+        <h1 class="pt-4 text-center mb-5 wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="100ms">Features</h1>
         <div class="row mb-4">
           <div class="col-md-3">
-            <div class="card text-center text-white">
+            <div class="card text-center text-white wow zoomIn" data-wow-duration="1000ms" data-wow-delay="500ms">
               <a href="#">
                 <img src="./images/thumb1.jpg" alt="" class="card-img-top img-fluid">
                 <div class="card-poster">
@@ -263,7 +264,7 @@
             <p>Salomon's Freeride Weekend Preview</p>
           </div>
           <div class="col-md-3">
-            <div class="card text-center text-white">
+            <div class="card text-center text-white wow zoomIn" data-wow-duration="1000ms" data-wow-delay="500ms">
               <a href="#">
                 <img src="./images/thumb2.jpg" alt="" class="card-img-top img-fluid">
                 <div class="card-poster">
@@ -274,7 +275,7 @@
             <p>Jerremy Johnes: On That Street Grind</p>
           </div>
           <div class="col-md-3">
-            <div class="card text-center text-white">
+            <div class="card text-center text-white wow zoomIn" data-wow-duration="1000ms" data-wow-delay="500ms">
               <a href="#">
                 <img src="./images/thumb3.jpg" alt="" class="card-img-top img-fluid">
                 <div class="card-poster">
@@ -285,7 +286,7 @@
             <p>Burton's Tokyo Rail Day Recap</p>
           </div>
           <div class="col-md-3">
-            <div class="card text-center text-white">
+            <div class="card text-center text-white wow zoomIn" data-wow-duration="1000ms" data-wow-delay="500ms">
               <a href="#">
                 <img src="./images/thumb4.jpg" alt="" class="card-img-top img-fluid">
                 <div class="card-poster">
@@ -398,6 +399,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/navbar-fixed.js"></script>
     <script src="js/baguetteBox.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <script src="js/main.js"></script>
 </body>
 
